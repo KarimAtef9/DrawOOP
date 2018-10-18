@@ -1,0 +1,45 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+#lbl {
+	-fx-font-size:20px;
+	-fx-background-color:#ccffcc;
+}
+
+#num {
+	-fx-background-color:#009900;
+	-fx-text-fill: white;
+	-fx-font-weight:bold;
+}
+
+#prv {
+	-fx-background-color:#008000;
+	-fx-text-fill: white;
+	-fx-font-weight:bold;
+}
+
+
+#pnt {
+	-fx-background-color:#008000;
+	-fx-text-fill: white;
+	-fx-font-weight:bold;
+}
+#eql {
+	
+	-fx-background-color:#004d00;
+	-fx-text-fill: white;
+	-fx-font-weight:bold;
+}
+#crt {
+	-fx-background-color:#006600;
+	-fx-text-fill: white;
+	-fx-font-weight:bold;
+}
+#c {
+	-fx-background-color:#004d00;
+	-fx-text-fill: white;
+	-fx-font-weight:bold;
+}
+
+#vbx {
+	-fx-background-color:#ccffcc;
+}
+
