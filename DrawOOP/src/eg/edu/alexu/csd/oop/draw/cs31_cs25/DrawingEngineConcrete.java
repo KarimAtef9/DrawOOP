@@ -1,4 +1,4 @@
-package eg.edu.alexu.csd.oop.test.draw.cs31_cs25;
+package eg.edu.alexu.csd.oop.draw.cs31_cs25;
 
 import java.awt.*;
 import java.io.BufferedWriter;
@@ -111,7 +111,7 @@ public class DrawingEngineConcrete implements DrawingEngine {
 			ClassLoader classLoader = DrawingEngineConcrete.class.getClassLoader();
 			Class aClass = null;
 			try {
-				aClass = classLoader.loadClass("eg.edu.alexu.csd.oop.draw.RoundRectangle");
+				aClass = classLoader.loadClass("eg.edu.alexu.csd.oop.draw.cs31_cs25.RoundRectangle");
 			} catch (ClassNotFoundException e) {
 				e.printStackTrace();
 			}

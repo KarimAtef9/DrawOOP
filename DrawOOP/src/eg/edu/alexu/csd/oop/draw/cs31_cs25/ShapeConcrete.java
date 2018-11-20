@@ -1,4 +1,4 @@
-package eg.edu.alexu.csd.oop.test.draw.cs31_cs25;
+package eg.edu.alexu.csd.oop.draw.cs31_cs25;
 
 import java.awt.Color;
 import java.awt.Point;
