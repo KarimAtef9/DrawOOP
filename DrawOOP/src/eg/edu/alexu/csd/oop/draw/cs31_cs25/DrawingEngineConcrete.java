@@ -111,7 +111,7 @@ public class DrawingEngineConcrete implements DrawingEngine {
 			ClassLoader classLoader = DrawingEngineConcrete.class.getClassLoader();
 			Class aClass = null;
 			try {
-				aClass = classLoader.loadClass("eg.edu.alexu.csd.oop.draw.cs31_cs25.RoundRectangle");
+				aClass = classLoader.loadClass("eg.edu.alexu.csd.oop.draw.RoundRectangle");
 			} catch (ClassNotFoundException e) {
 				e.printStackTrace();
 			}

@@ -11,12 +11,13 @@ import java.util.function.Predicate;
 import java.util.regex.Pattern;
 
 import com.sun.javafx.geom.Point2D;
+import com.sun.javafx.geom.Rectangle;
 
 import eg.edu.alexu.csd.oop.draw.DrawingEngine;
+import eg.edu.alexu.csd.oop.draw.RoundRectangle;
 import eg.edu.alexu.csd.oop.draw.Shape;
 import eg.edu.alexu.csd.oop.draw.cs31_cs25.DrawingEngineConcrete;
 import eg.edu.alexu.csd.oop.draw.cs31_cs25.Engine;
-import eg.edu.alexu.csd.oop.draw.cs31_cs25.RoundRectangle;
 import eg.edu.alexu.csd.oop.draw.cs31_cs25.ShapeConcrete;
 import eg.edu.alexu.csd.oop.draw.cs31_cs25.circle;
 import eg.edu.alexu.csd.oop.draw.cs31_cs25.ellipse;
@@ -554,7 +555,7 @@ public class MainController implements Initializable {
 			boolean t2 = Pattern.matches("[0-9]{1,}[.]?[0-9]{0,}", txt2.getText());
 			boolean t3 = Pattern.matches("[0-9]{1,}[.]?[0-9]{0,}", txt3.getText());
 			if (t1 && t2 && t3) {
-				Shape rec = new RoundRectangle();
+				Shape rec = (Shape) new RoundRectangle();
 				rec.getProperties().put("length", Double.parseDouble(txt2.getText()));
 				rec.getProperties().put("width", Double.parseDouble(txt3.getText()));
 				String center = txt1.getText();
@@ -587,7 +588,7 @@ public class MainController implements Initializable {
 		});
 
 		canPane.setOnMouseReleased(e -> {
-			Shape rec = new RoundRectangle();
+			Shape rec = (Shape) new RoundRectangle();
 			rec.setPosition(new Point(centerX,centerY));
 			Point p = (Point) rec.getPosition();
 			double x = e.getX() - p.x;
