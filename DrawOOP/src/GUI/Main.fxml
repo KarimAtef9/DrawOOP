@@ -13,7 +13,7 @@
 
 <AnchorPane fx:id="back" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.MainController">
    <children>
-      <VBox fx:id="vbx" layoutY="120.0" prefHeight="530.0" prefWidth="80.0">
+      <VBox fx:id="vbx" alignment="TOP_CENTER" layoutY="120.0" prefHeight="530.0" prefWidth="97.0">
          <children>
             <Button mnemonicParsing="false" onAction="#drawLine" prefHeight="40.0" prefWidth="80.0" text="Line">
                <VBox.margin>
@@ -72,13 +72,12 @@
             <Button mnemonicParsing="false" onAction="#refresh" prefHeight="40.0" prefWidth="60.0" text="Refresh" translateX="115.0" translateY="10.0" />
             <Button mnemonicParsing="false" onAction="#undo" prefHeight="40.0" prefWidth="60.0" text="Undo" translateX="130.0" translateY="10.0" />
             <Button layoutX="150.0" mnemonicParsing="false" onAction="#redo" prefHeight="40.0" prefWidth="60.0" text="Redo" translateX="145.0" translateY="10.0" />
-            <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="Edit" translateX="160.0" translateY="10.0" />
             <Button mnemonicParsing="false" onAction="#remove" prefHeight="40.0" prefWidth="60.0" text="Delete" translateX="175.0" translateY="10.0" />
             <Button mnemonicParsing="false" onAction="#release" prefHeight="40.0" prefWidth="60.0" text="Release" translateX="190.0" translateY="10.0" />
             <Button mnemonicParsing="false" onAction="#select" prefHeight="40.0" prefWidth="60.0" text="Select" translateX="205.0" translateY="10.0" />
             <Button mnemonicParsing="false" onAction="#edit" prefHeight="40.0" prefWidth="60.0" text="Edit" translateX="220.0" translateY="10.0" />
          </children></HBox>
-      <Pane fx:id="canPane" layoutX="80.0" layoutY="120.0" prefHeight="530.0" prefWidth="870.0" />
+      <Pane fx:id="canPane" layoutX="97.0" layoutY="120.0" prefHeight="530.0" prefWidth="854.0" />
       <HBox fx:id="vbx" layoutY="60.0" prefHeight="60.0" prefWidth="950.0">
          <children>
             <Label alignment="CENTER" prefHeight="40.0" prefWidth="50.0" text="Undo :" translateX="85.0" translateY="10.0" visible="false" />
